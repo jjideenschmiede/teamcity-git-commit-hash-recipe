@@ -1,10 +1,10 @@
-tasks.register("recipes") {
+tasks.register("recipe") {
     doLast {
         val outputDir = file(".teamcity/pluginData/_Self/metaRunners")
         outputDir.mkdirs()
 
         val inputFile = file("src/recipe.yml")
-		val fileName = "generate-git-commit-hash-variable"
+		val fileName = "git-commit-hash-variable"
         val outputFile = outputDir.resolve("$fileName.yml")
 
         if (inputFile.exists()) {
@@ -25,4 +25,4 @@ tasks.register("recipes") {
     }
 }
 
-defaultTasks("recipes")
+defaultTasks("recipe")
