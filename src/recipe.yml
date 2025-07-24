@@ -1,0 +1,22 @@
+name: jjideenschmiede/generate-git-commit-hash-variable
+version: 1.0.0
+description: |
+  Creates a short version of the current Git commit hash and sets it as an environment variable.
+inputs:
+  - env.input_hash_length:
+      type: text
+      required: false
+      label: Hash Length
+      description: |
+        The number of characters for the short commit hash (between 4 and 40).
+      default: "7"
+  - env.input_variable_name:
+      type: text
+      required: false
+      label: Environment Variable Name
+      description: |
+        The name of the environment variable to store the short commit hash.
+      default: "GIT_COMMIT_SHORT_HASH"
+steps:
+  - name: Set Git Commit Hash Environment Variable
+    kotlin-script: !include src.main.kts
