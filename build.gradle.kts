@@ -4,7 +4,7 @@ tasks.register("recipe") {
         outputDir.mkdirs()
 
         val inputFile = file("src/recipe.yml")
-		val fileName = "git-commit-hash-variable"
+		val fileName = "git-commit-hash"
         val outputFile = outputDir.resolve("$fileName.yml")
 
         if (inputFile.exists()) {
