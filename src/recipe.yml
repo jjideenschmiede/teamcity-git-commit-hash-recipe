@@ -1,5 +1,5 @@
 name: jjideenschmiede/git-commit-hash
-title: Git Commit Hash Variable
+title: Git Commit Hash
 version: 1.0.0
 description: |
   Creates a short version of the current Git commit hash and sets it as an environment variable.
