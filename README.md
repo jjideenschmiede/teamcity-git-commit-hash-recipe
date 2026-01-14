@@ -1,4 +1,4 @@
-# TeamCity Git Commit Hash Recipe
+# Git Commit Hash
 
 This recipe provides a simple way to get the current Git commit hash in TeamCity build configurations. In the default configuration, the commit hash is available as environment variable `%env.GIT_COMMIT_SHORT_HASH%`.
 
